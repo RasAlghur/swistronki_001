@@ -7,7 +7,9 @@ const PRIVATE_KEY = vars.get("PRIVATE_KEY");
 
 module.exports = {
   defaultNetwork: "swisstronik",
-  solidity: "0.8.19",
+  solidity: {
+    compilers: [ { version: "0.8.19" }, { version: "0.8.20" }, { version: "0.8.22" }, { version: "0.8.24" } ]
+  },
   networks: {
     swisstronik: {
       url: "https://json-rpc.testnet.swisstronik.com/",
